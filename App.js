@@ -1,11 +1,17 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View, Image } from "react-native";
 
 export default class App extends React.Component {
   render() {
+    let pic = {
+      uri:
+        "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzA4OC85MTEvb3JpZ2luYWwvZ29sZGVuLXJldHJpZXZlci1wdXBweS5qcGVn"
+    };
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <Text style={styles.text}>Hello, Chloe!</Text>
+        <Image source={pic} style={{ width: 193, height: 110 }} />
+        <Text style={styles.text}>What does this one look like</Text>
       </View>
     );
   }
@@ -14,8 +20,11 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#000",
+    alignItems: "center",
+    justifyContent: "center"
   },
+  text: {
+    color: "red"
+  }
 });
