@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
+import FirstComponent from "./components/FirstComponent";
 
 export default class App extends React.Component {
   render() {
@@ -11,7 +12,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Text style={styles.text}>Hello, Chloe!</Text>
         <Image source={pic} style={{ width: 193, height: 110 }} />
-        <Text style={styles.text}>What does this one look like</Text>
+        <FirstComponent style={styles.text} />
       </View>
     );
   }
