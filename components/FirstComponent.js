@@ -11,7 +11,7 @@ export default class FirstComponent extends React.Component {
             backgroundColor: "#42dcf4"
           }}
         >
-          My first component
+          {this.props.name}'s first component
         </Text>
       </View>
     );
